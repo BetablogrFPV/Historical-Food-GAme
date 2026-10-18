@@ -17,7 +17,22 @@ public class CharMoveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _moveDirection = move.action.ReadValue<Vector2>();
+        if(Gamepad.current.leftStick.ReadValue() == new Vector2(x: 0, y: 0) && Gamepad.current.dpad.ReadValue() == new Vector2(x: 0, y: 0))
+        {
+            _moveDirection = move.action.ReadValue<Vector2>();
+        }
+        else
+        {
+            if (Gamepad.current.dpad.ReadValue() == new Vector2(x: 0, y: 0))
+            {
+                _moveDirection = Gamepad.current.leftStick.ReadValue();
+            }
+            else
+            {
+                _moveDirection = Gamepad.current.dpad.ReadValue();
+            }
+        }
+        Debug.Log(_moveDirection);
     }
 
     private void FixedUpdate()

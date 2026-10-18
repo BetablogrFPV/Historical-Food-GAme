@@ -129,9 +129,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1099709985}
   - component: {fileID: 1099709984}
-  - component: {fileID: 1099709983}
   - component: {fileID: 1099709986}
   - component: {fileID: 1099709987}
+  - component: {fileID: 1099709988}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -139,28 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &1099709983
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099709982}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5944d50f28532fae3b9e8b4f6da55ac9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1099709984
 SpriteRenderer:
   serializedVersion: 3
@@ -248,7 +226,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fa7d861acad99a3abf3ddfbffeca3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharMoveScript
-  movementLength: 0.25
+  movementLength: 1
+  rb: {fileID: 1099709988}
+  move: {fileID: 2898381547003828882, guid: 8948cc834fae0929cb9d4084ad8e5524, type: 3}
 --- !u!114 &1099709987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,10 +255,37 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Default
+  m_DefaultControlScheme: 
   m_DefaultActionMap: New action map
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!50 &1099709988
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099709982}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1894935359
 GameObject:
   m_ObjectHideFlags: 0
