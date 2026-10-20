@@ -67,5 +67,9 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Projektarbeit.slnx"
+    "dotnet.defaultSolution": "Projektarbeit.slnx",
+    "csharp-dev-tools.solutionViewer.selectedWorkspaceSolutions": [
+        "Historical-Food-GAme.slnx",
+        "Projektarbeit.slnx"
+    ]
 }
