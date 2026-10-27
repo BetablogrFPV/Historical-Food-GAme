@@ -15,6 +15,16 @@
                     "interactions": "",
                     "initialStateCheck": false,
                     "priority": 0
+                },
+                {
+                    "name": "FarmlandInteraction",
+                    "type": "PassThrough",
+                    "id": "e96bcfb6-b0ee-4d66-8776-8e3f4521a57f",
+                    "expectedControlType": "Key",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -259,6 +269,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "99b749af-7971-4ef7-826c-5b0d2a3cbc1e",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FarmlandInteraction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
