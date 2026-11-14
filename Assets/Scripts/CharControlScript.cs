@@ -20,6 +20,17 @@ public class CharMoveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        moveBase();
+    }
+
+    private void FixedUpdate()
+    {
+        moveApply();
+        //Debug.Log(_moveDirection);
+    }
+
+    private void moveBase()
+    {
         _moveDirection = move.action.ReadValue<Vector2>();
         if (Gamepad.current != null)
         {
@@ -32,10 +43,9 @@ public class CharMoveScript : MonoBehaviour
                 _moveDirection = Gamepad.current.dpad.ReadValue();
             }
         }
-        //Debug.Log(_moveDirection);
     }
 
-    private void FixedUpdate()
+    private void moveApply()
     {
         if (_moveDirection.x > 0 && !rotate)
         {

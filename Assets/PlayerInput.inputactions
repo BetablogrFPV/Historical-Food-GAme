@@ -17,10 +17,10 @@
                     "priority": 0
                 },
                 {
-                    "name": "FarmlandInteraction",
-                    "type": "PassThrough",
-                    "id": "e96bcfb6-b0ee-4d66-8776-8e3f4521a57f",
-                    "expectedControlType": "Key",
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "4f7880f0-48f6-4b9c-9241-d64f65ae7195",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false,
@@ -272,12 +272,23 @@
                 },
                 {
                     "name": "",
-                    "id": "99b749af-7971-4ef7-826c-5b0d2a3cbc1e",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "Press",
+                    "id": "be412605-fa47-429b-b849-78c19bdc86ce",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "FarmlandInteraction",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2e54330c-ebce-451a-8ced-19a874613463",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
