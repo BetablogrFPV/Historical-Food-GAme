@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Historical-Food-GAme.slnx"
+    "dotnet.defaultSolution": "Historical Food GAme.slnx"
 }
