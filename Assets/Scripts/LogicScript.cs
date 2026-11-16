@@ -18,7 +18,7 @@ public class LogicScript : MonoBehaviour
         
     }
 
-    public void checkRange()
+    public void CheckRange()
     {
         
     }

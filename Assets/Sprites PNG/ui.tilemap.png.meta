@@ -1,0 +1,639 @@
+fileFormatVersion: 2
+guid: 63a73d1b1dba925fa818268b9ea4aa2e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6007426555812247361
+    second: ui.tilemap_0
+  - first:
+      213: -4165770437541106027
+    second: ui.tilemap_1
+  - first:
+      213: -4539698836830299731
+    second: ui.tilemap_2
+  - first:
+      213: -4756432583024708769
+    second: ui.tilemap_3
+  - first:
+      213: -828089364319284712
+    second: ui.tilemap_4
+  - first:
+      213: -8687464705445835240
+    second: ui.tilemap_5
+  - first:
+      213: 4521601074611787049
+    second: ui.tilemap_6
+  - first:
+      213: 4017482616739974843
+    second: ui.tilemap_7
+  - first:
+      213: -1723822190685335076
+    second: ui.tilemap_8
+  - first:
+      213: -2026315205274144919
+    second: ui.tilemap_9
+  - first:
+      213: 8027014553809124428
+    second: ui.tilemap_10
+  - first:
+      213: -4738879319073323672
+    second: ui.tilemap_11
+  - first:
+      213: 6826589336826846250
+    second: ui.tilemap_12
+  - first:
+      213: -7320217056127758511
+    second: ui.tilemap_13
+  - first:
+      213: 1547222768507565817
+    second: ui.tilemap_14
+  - first:
+      213: 6893276712188261697
+    second: ui.tilemap_15
+  - first:
+      213: -8920109488248325376
+    second: ui.tilemap_16
+  - first:
+      213: -4724860707478258059
+    second: ui.tilemap_17
+  - first:
+      213: 2092280978262986402
+    second: ui.tilemap_18
+  - first:
+      213: 8061334369845853057
+    second: ui.tilemap_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ui.tilemap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 113
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8009e406551aca0800000000000000
+      internalID: -6007426555812247361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ee986bbd53036c0800000000000000
+      internalID: -4165770437541106027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 152
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9d973d5ffbff0c0800000000000000
+      internalID: -4539698836830299731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 153
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53f7b234c1cdfdb0800000000000000
+      internalID: -4756432583024708769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 153
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812587d4c190284f0800000000000000
+      internalID: -828089364319284712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_5
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 153
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e4829e0ecef6780800000000000000
+      internalID: -8687464705445835240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 159
+        width: 114
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925924c8834ffbe30800000000000000
+      internalID: 4521601074611787049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_7
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 152
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbec7168727f0c730800000000000000
+      internalID: 4017482616739974843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 152
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1d34cc9d0c318e0800000000000000
+      internalID: -1723822190685335076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_9
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 153
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f69a28e0511e3e0800000000000000
+      internalID: -2026315205274144919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_10
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 153
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4cfeae253fa56f60800000000000000
+      internalID: 8027014553809124428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_11
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 153
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8658031fd5e1c3eb0800000000000000
+      internalID: -4738879319073323672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_12
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 143
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c980145daecbe50800000000000000
+      internalID: 6826589336826846250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 143
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fcfb22f5d596a90800000000000000
+      internalID: -7320217056127758511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_14
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 143
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f63a4119e6d87510800000000000000
+      internalID: 1547222768507565817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_15
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 143
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1453478c5a6d9af50800000000000000
+      internalID: 6893276712188261697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_16
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 143
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00bfd536ea7653480800000000000000
+      internalID: -8920109488248325376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_17
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 143
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ebe8d483ced6eb0800000000000000
+      internalID: -4724860707478258059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 73
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae0cafd676490d10800000000000000
+      internalID: 2092280978262986402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui.tilemap_19
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 95
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b3f4a06ec9fdf60800000000000000
+      internalID: 8061334369845853057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ui.tilemap_0: -6007426555812247361
+      ui.tilemap_1: -4165770437541106027
+      ui.tilemap_10: 8027014553809124428
+      ui.tilemap_11: -4738879319073323672
+      ui.tilemap_12: 6826589336826846250
+      ui.tilemap_13: -7320217056127758511
+      ui.tilemap_14: 1547222768507565817
+      ui.tilemap_15: 6893276712188261697
+      ui.tilemap_16: -8920109488248325376
+      ui.tilemap_17: -4724860707478258059
+      ui.tilemap_18: 2092280978262986402
+      ui.tilemap_19: 8061334369845853057
+      ui.tilemap_2: -4539698836830299731
+      ui.tilemap_3: -4756432583024708769
+      ui.tilemap_4: -828089364319284712
+      ui.tilemap_5: -8687464705445835240
+      ui.tilemap_6: 4521601074611787049
+      ui.tilemap_7: 4017482616739974843
+      ui.tilemap_8: -1723822190685335076
+      ui.tilemap_9: -2026315205274144919
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

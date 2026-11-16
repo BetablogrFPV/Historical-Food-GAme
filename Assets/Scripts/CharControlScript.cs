@@ -8,7 +8,6 @@ public class CharMoveScript : MonoBehaviour
     public Rigidbody2D rb;
     private Vector2 _moveDirection;
     public InputActionReference move;
-    public Transform transform;
     public bool rotate = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,16 +19,16 @@ public class CharMoveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveBase();
+        MoveBase();
     }
 
     private void FixedUpdate()
     {
-        moveApply();
+        MoveApply();
         //Debug.Log(_moveDirection);
     }
 
-    private void moveBase()
+    private void MoveBase()
     {
         _moveDirection = move.action.ReadValue<Vector2>();
         if (Gamepad.current != null)
@@ -45,7 +44,7 @@ public class CharMoveScript : MonoBehaviour
         }
     }
 
-    private void moveApply()
+    private void MoveApply()
     {
         if (_moveDirection.x > 0 && !rotate)
         {
