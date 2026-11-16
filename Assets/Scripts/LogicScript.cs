@@ -20,23 +20,6 @@ public class LogicScript : MonoBehaviour
 
     public void checkRange()
     {
-        var playerCollider = player.GetComponent<CircleCollider2D>();
-
-        Vector3 pos = this.transform.position;
-        float dist = float.PositiveInfinity;
-        ChaseableEntity targ = null;
-        foreach(var obj in ChaseableEntity.Entities)
-        {
-            var d = (pos - obj.transform.position).sqrMagnitude;
-            if(d < dist)
-            {
-                targ = obj;
-                dist = d;
-            }
-        }
-        if (playerCollider.IsTouching(obj.GetComponent<Collider2D>))
-        {
-            Debug.Log("Touched");
-        }
+        
     }
 }
