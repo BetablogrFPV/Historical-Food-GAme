@@ -7,11 +7,7 @@ public class FarmScript : MonoBehaviour, IPointerClickHandler
     public Collider2D collider;
     public GameObject player;
     public Sprite highlight;
-    public RectTransform interactionMenu;
-    public Canvas canvas;
-    public float xOffset;
-    public float yOffset;
-    public float multiplier;
+    public GameObject logicManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,16 +28,5 @@ public class FarmScript : MonoBehaviour, IPointerClickHandler
             return;
         }
 
-        var playerCollider = player.GetComponent<CircleCollider2D>();
-
-        if (playerCollider != null && collider.IsTouching(playerCollider))
-        {
-            Debug.Log("Collider: " + collider.transform.position.x + ", " + collider.transform.position.y);
-            interactionMenu.position = new Vector2(
-                collider.transform.position.x + xOffset,
-                collider.transform.position.y + (yOffset * multiplier));
-            canvas.gameObject.SetActive(true);
-            Debug.Log("Interaction-Menu: " + interactionMenu.position);
-        }
     }
 }

@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -16,31 +18,41 @@ public class CharAnimScript : MonoBehaviour
     public bool playing = false;
     public RandomListScript listScript;
     public string chosenIdle;
+    private ArrayList idleList = new ArrayList();
+    public int idleRndm;
     
     void Awake()
     {
         listScript = GetComponent<RandomListScript>();
         _animator = GetComponent<Animator>();
-        rndmNmbr = UnityEngine.Random.Range(3, 10);
-        animCount = UnityEngine.Random.Range(2, 6);
-        
-        // Source - https://stackoverflow.com/a/723219
-        // Posted by Neil Williams
-        // Retrieved 2026-11-16, License - CC BY-SA 2.5
-        // Was modified to fit our project
-
-        var idleList = new List<string> { "idle1", "idle2", "idle3" };
-        chosenIdle = listScript.GetRandomElements(idleList, 1).ToString();
-        Debug.Log(listScript.GetRandomElements(idleList, 1));
+        rndmNmbr = UnityEngine.Random.Range(6, 15);
+        animCount = UnityEngine.Random.Range(1, 3);
+        idleList.Add("idle1");
+        idleList.Add("idle2");
+        idleList.Add("idle3");
+        chosenIdle = GetString();
     }
     
     // Update is called once per frame
     void Update()
     {
+        animation();
+    }
+    
+    public string GetString()
+    {
+        idleRndm = UnityEngine.Random.Range(0,idleList.Count);
+        string rndmStrng = idleList[idleRndm].ToString();
+        return rndmStrng;
+    }
+
+    public void animation()
+    {
         if (Gamepad.current == null)
         {
             if (move.action.ReadValue<Vector2>() == new Vector2(0, 0))
             {
+                _animator.Play("Base");
                 if (counter < rndmNmbr && !playing)
                 {
                     counter += Time.deltaTime;
@@ -59,10 +71,11 @@ public class CharAnimScript : MonoBehaviour
                     if (fCounter >= animCount)
                     {
                         _animator.Play("Base");
-                        rndmNmbr = UnityEngine.Random.Range(3, 10);
-                        animCount = UnityEngine.Random.Range(2,6);
+                        rndmNmbr = UnityEngine.Random.Range(6, 15);
+                        animCount = UnityEngine.Random.Range(1,3);
                         counter = 0;
                         fCounter = 0;
+                        chosenIdle = GetString();
                         playing = false;
                     }
                 }
@@ -70,6 +83,7 @@ public class CharAnimScript : MonoBehaviour
             if (move.action.ReadValue<Vector2>() != new Vector2(0,0))
             {
                 Debug.Log("Stopped!");
+                _animator.Play("walk");
                 counter = 0;
             }
         }
@@ -77,6 +91,7 @@ public class CharAnimScript : MonoBehaviour
         {
             if (Gamepad.current.dpad.ReadValue() == new Vector2(x: 0, y: 0) && Gamepad.current.leftStick.ReadValue() == new Vector2(x:0, y:0))
             {
+                _animator.Play("Base");
                 if (counter < rndmNmbr && !playing)
                 {
                     counter += Time.deltaTime;
@@ -95,10 +110,11 @@ public class CharAnimScript : MonoBehaviour
                     if (fCounter >= animCount)
                     {
                         _animator.Play("Base");
-                        rndmNmbr = UnityEngine.Random.Range(3, 10);
-                        animCount = UnityEngine.Random.Range(2,6);
+                        rndmNmbr = UnityEngine.Random.Range(6, 15);
+                        animCount = UnityEngine.Random.Range(1,3);
                         counter = 0;
                         fCounter = 0;
+                        chosenIdle = GetString();
                         playing = false;
                     }
                 }
@@ -106,6 +122,7 @@ public class CharAnimScript : MonoBehaviour
             if (Gamepad.current.dpad.ReadValue() != new Vector2(x: 0, y: 0) || Gamepad.current.leftStick.ReadValue() != new Vector2(x:0, y:0))
             {
                 Debug.Log("Stopped!");
+                _animator.Play("walk");
                 counter = 0;
             }
         }
