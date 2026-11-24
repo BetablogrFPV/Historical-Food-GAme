@@ -36,7 +36,7 @@ public class CharAnimScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animation();
+        Animation();
     }
     
     public string GetString()
@@ -46,15 +46,15 @@ public class CharAnimScript : MonoBehaviour
         return rndmStrng;
     }
 
-    public void animation()
+    public void Animation()
     {
         if (Gamepad.current == null)
         {
             if (move.action.ReadValue<Vector2>() == new Vector2(0, 0))
             {
-                _animator.Play("Base");
                 if (counter < rndmNmbr && !playing)
                 {
+                    _animator.Play("Base");
                     counter += Time.deltaTime;
                 }
                 if (counter >= rndmNmbr && !playing)
@@ -91,9 +91,9 @@ public class CharAnimScript : MonoBehaviour
         {
             if (Gamepad.current.dpad.ReadValue() == new Vector2(x: 0, y: 0) && Gamepad.current.leftStick.ReadValue() == new Vector2(x:0, y:0))
             {
-                _animator.Play("Base");
                 if (counter < rndmNmbr && !playing)
                 {
+                    _animator.Play("Base");
                     counter += Time.deltaTime;
                 }
                 if (counter >= rndmNmbr && !playing)
