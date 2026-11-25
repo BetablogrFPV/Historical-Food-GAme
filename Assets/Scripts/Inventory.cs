@@ -6,7 +6,7 @@ using UnityEngine;
 public class Inventory
 {
     public static int size = 12;
-    private Item[] itemArray;
+    public Item[] itemArray;
 
     public static void Main()
     {
@@ -22,11 +22,11 @@ public class Inventory
     {
         for (int i = 0; i < itemArray.Length; i++)
         {
-            if (itemArray[i] != null)
+            if (itemArray[i] == null)
             {
                 itemArray[i] = item;
             }
-            if (itemArray[i].itemType == item.itemType)
+            if (itemArray[i] != null && itemArray[i].itemType == item.itemType)
             {
                 itemArray[i].amount++;
             }
@@ -36,5 +36,10 @@ public class Inventory
     public Array GetArray()
     {
         return itemArray;
+    }
+
+    public int GetSize()
+    {
+        return size;
     }
 }
